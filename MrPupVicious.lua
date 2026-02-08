@@ -17,8 +17,10 @@ end
 
 task.spawn(function()
     while true do
-        TabNight.Name = "NightDetect: " .. tostring(autoNight())
-        task.wait(2)
+        local Section = Tab:AddSection({
+	       TabNight.Name = "NightDetect: " .. tostring(autoNight())
+           task.wait(2)
+        })
     end
 end)
 
