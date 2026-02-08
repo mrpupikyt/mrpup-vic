@@ -21,10 +21,8 @@ local VicTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local VicSection = VicTab:AddSection({
-	Name = "NightDetect: " .. tostring(autoNight())
-    task.wait(2)
-})
+
+VicTab:AddLabel("Label")
 
 end
 
