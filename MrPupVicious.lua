@@ -4,10 +4,10 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jen
 
 local Window = OrionLib:MakeWindow({Name = "MrPup Vicious", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+
+
 else
     return
 end
 
-
 OrionLib:Init()
-
