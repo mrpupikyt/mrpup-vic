@@ -15,6 +15,13 @@ function autoNight()
     end
 end
 
+local Tab = Window:MakeTab({
+	Name = "Tab 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
 local Section = Tab:AddSection({
 	TabNight.Name = "NightDetect: " .. tostring(autoNight())
     task.wait(2)
