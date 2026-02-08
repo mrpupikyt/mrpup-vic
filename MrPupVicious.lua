@@ -4,21 +4,10 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jen
 
 local Window = OrionLib:MakeWindow({Name = "MrPup Vicious", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-local Tab = Window:MakeTab({
-	Name = "Tab 1",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-
-local Section = Tab:AddSection({
-	TabNight.Name = "NightDetect: "
-    task.wait(2)
-})
-
 else
     return
 end
 
 
 OrionLib:Init()
+
