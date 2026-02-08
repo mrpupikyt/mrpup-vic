@@ -6,7 +6,7 @@ local Window = OrionLib:MakeWindow({Name = "MrPup Vicious", HidePremium = false,
 
 
 
-local Tab = Window:MakeTab({
+local VicTab = Window:MakeTab({
 	Name = "Vic",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
