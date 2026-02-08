@@ -15,14 +15,10 @@ function autoNight()
     end
 end
 
-task.spawn(function()
-    while true do
-        local Section = Tab:AddSection({
-	       TabNight.Name = "NightDetect: " .. tostring(autoNight())
-           task.wait(2)
-        })
-    end
-end)
+local Section = Tab:AddSection({
+	TabNight.Name = "NightDetect: " .. tostring(autoNight())
+    task.wait(2)
+})
 
 else
     return
