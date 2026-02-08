@@ -4,17 +4,6 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jen
 
 local Window = OrionLib:MakeWindow({Name = "MrPup Vicious", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-function autoNight()
-    local timeString = game.Lighting.TimeOfDay
-    local hour = tonumber(string.sub(timeString, 1, 2))
-    
-    if hour >= 0 and hour < 8 then
-        return true
-    else
-        return false
-    end
-end
-
 local Tab = Window:MakeTab({
 	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
@@ -23,12 +12,13 @@ local Tab = Window:MakeTab({
 
 
 local Section = Tab:AddSection({
-	TabNight.Name = "NightDetect: " .. tostring(autoNight())
+	TabNight.Name = "NightDetect: "
     task.wait(2)
 })
 
 else
     return
 end
+
 
 OrionLib:Init()
