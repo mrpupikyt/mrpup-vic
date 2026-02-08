@@ -6,6 +6,13 @@ local Window = OrionLib:MakeWindow({Name = "MrPup Vicious", HidePremium = false,
 
 
 
+local Tab = Window:MakeTab({
+	Name = "Vic",
+	PremiumOnly = false
+})
+
+
+
 else
     return
 end
