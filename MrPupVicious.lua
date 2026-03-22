@@ -44,15 +44,6 @@ local function sendMessage(pollen, victype, link)
     end
 end
 
-local function getServerRegion()
-    local response = game:HttpGet("https://ipapi.co/json/")
-    local data = HttpService:JSONDecode(response)
-
-    serverlocate = data.country_name .. " - " .. data.city
-end
-
-getServerRegion()
-
 local function isNight()
     local hour = Lighting.ClockTime
     return hour >= 0 and hour < 8
@@ -81,9 +72,6 @@ VicTab:AddTextbox({
         testField = value
     end
 })
-
-VicTab:AddLabel("Server: " .. serverlocate)
-
 
 local function getFieldFromPosition(pos)
     for _, field in pairs(game.Workspace.FlowerZones:GetChildren()) do
